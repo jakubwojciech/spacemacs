@@ -24,6 +24,7 @@
         ;; not compatible with magit 2.1 at the time of release
         ;; magit-svn
         smeargle
+        ssh-agency
         ))
 
 (defun git/init-helm-gitignore ()
@@ -284,3 +285,9 @@
       "ghc" 'smeargle-clear
       "ghh" 'smeargle-commits
       "ght" 'smeargle)))
+
+(defun git/init-ssh-agency ()
+    (use-package ssh-agency
+      :defer t
+      :init))
+
